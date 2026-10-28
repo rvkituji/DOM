@@ -5,9 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password generator</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
 
-  <body>
-    Random password generator
+  <body
+    class="min-h-screen min-w-[1000px] bg-[#101b16] font-sans text-[#f0fdf4]"
+  >
+    <div class="mx-auto flex min-h-screen w-[920px] flex-col">
+      <header
+        class="flex h-24 shrink-0 items-center justify-between border-b border-[#86efac]/10"
+      >
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#86efac]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#86efac] transition-colors hover:border-[#86efac]/35 hover:bg-[#86efac]/10 hover:text-[#f0fdf4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#86efac] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span
+          class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#86efac]/65"
+          >The everyday collection / 02</span
+        >
+      </header>
+
+      <div class="flex flex-1 items-center justify-center py-10">
+        <div
+          class="border rounded-[24px] border-color-[#fffff] border-white/10 p-[36px] w-[520px] h-[571px] bg-[#192b22]"
+        >
+          <div class="border border-[#4ade8026] bg-[#4ade8026] rounded-[12px] w-[44px] h-[44px] flex items-center justify-center"><img src="Frame.png" alt="lock"></div>
+          <div class="text-[#f0fdf4] text-[28px] w-[273px] h-[34px] mt-[24px]">
+            Password generator
+          </div>
+          <div class="w-[235px] h-[17px] text-[#a4b9ad] text-[14px] mt-[8px]">
+            A strong password. One click away.
+          </div>
+          <div class="w-[85px] h-[15px] text-[#a4b9ad] text-[12px] mt-[32px]">
+            Your password
+          </div>
+          <div
+            class="border border-[#fffff] border-white/10 rounded-[12px] w-[448px] h-[64px] flex items-center justify-between pr-[12px] pl-[16px] bg-[#101b16] mt-[12px]"
+          >
+            <div class="w-[173px] h-[24px] text-[#bbf7d0] text-[18px]">
+              K9#mQ2&xR7!vN4@p
+            </div>
+            <div
+              class="w-[55px] h-[31px] border border-[#fffff] border-white/5 rounded-[8px] text-[12px] text-[#dcece2] pt-[8px] pr-[12px] pb-[8px] pl-[12px] flex items-center justify-center bg-[fffff] bg-white/5"
+            >
+              Copy
+            </div>
+          </div>
+          <div class="text-[#a4b9ad] text-[12px] w-[207px] h-[15px] mt-[12px]">
+            Uses letters,numbers,and symbols.
+          </div>
+          <div
+            class="w-[448px] h-[28px] flex items-center justify-between mt-[24px]"
+          >
+            <div class="w-[111px] h-[17px] text-[14px] text-[#dcece2]">
+              Password length
+            </div>
+            <div class="w-[22px] h-[24px] text-[#86efac] text-[18px]">16</div>
+          </div>
+          <input type="range" min="8" max="24" value="16" class="mt-4 w-full cursor-pointer accent-[#4ade80]">
+          
+          <div
+            class="w-[448px] h-[16px] flex items-center justify-between mt-[11px]"
+          >
+            <div class="w-[8px] h-[15px] text-[12px] text-[#8aa294]">8</div>
+            <div class="w-[15px] h-[15px] text-[12px] text-[#8aa294]">24</div>
+          </div>
+          <div
+            class="mt-[28px] w-[448px] h-[48px] border border-[#4ade80] bg-[#4ade80] rounded-[12px] font-[600] text-[#102418] text-[14px] flex items-center justify-center"
+          >
+            Generate password
+          </div>
+          <div
+            class="w-[448px] h-[16px] mt-[20.5px] text-[#8aa294] text-[12px] font-[400] flex justify-center"
+          >
+            Generated in your browser. Never saved.
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
