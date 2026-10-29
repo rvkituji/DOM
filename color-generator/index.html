@@ -5,21 +5,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Palette Generator</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
 
-  <body>
-    <div class="class">
-      <div class="class"></div>
-      <div class="class"></div>
-      <div class="class"></div>
-      <div class="class"></div>
-      <div class="class"></div>
-      <div class="class"></div>
-      <div class="class"></div>
-      <div class="class"></div>
-      <div class="class"></div>
-      <div class="class"></div>
-      <div class="class"></div>
+  <body
+    class="min-h-screen min-w-[1000px] bg-[#09090b] font-sans text-[#f4f4f5]"
+  >
+    <div class="mx-auto flex min-h-screen w-[1240px] flex-col">
+      <header
+        class="flex h-24 shrink-0 items-center justify-between border-b border-[#d9f99d]/10"
+      >
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#d9f99d]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#d9f99d] transition-colors hover:border-[#d9f99d]/35 hover:bg-[#d9f99d]/10 hover:text-[#f4f4f5] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d9f99d] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span
+          class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#d9f99d]/65"
+          >The everyday collection / 03</span
+        >
+      </header>
+
+      <div class="flex flex-1 items-center justify-center py-10">
+        <div
+          class="w-[1440px] h-[1180px] bg-[#09090b] font-sans text-[#f4f4f5] pt-[40px] pr-[100px] pb-[40px] pl-[100px]"
+        >
+          <div class="w-[1240px] h-[104px] flex items-align justify-between">
+            <div class="w-[620px] h-[65px] gap-[12px] flex flex-col">
+              <div
+                class="w-[214px] h-[36px] text-[30px] text-[#f4f4f5] font-[600]"
+              >
+                Color palettes.
+              </div>
+              <div
+                class="w-[620px] h-[17px] text-[14px] text-[#a1a1aa] font-[400]"
+              >
+                Generated shades with Tailwind color names. Click a shade to
+                copy its HEX background color.
+              </div>
+            </div>
+            <div
+              class="w-[186px] h-[48px] border border-[#d9f99d] rounded-[12px] gap-[12px] bg-[#d9f99d] flex items-center justify-center"
+            >
+              <div class="w-[16px] h-[16px]">
+                <img src="frame2.png" alt="refresh" />
+              </div>
+              <div class="text-[14px] text-[#09090b] font-[600]">
+                Shuffle palettes
+              </div>
+            </div>
+          </div>
+          <div class="w-[1240px] h-[55px] flex justify-between">
+            <div class="w-[163px] h-[15px] text-[12px] text-[#a1a1aa]">
+              100 → 950 · LIGHT TO DARK
+            </div>
+            <div class="w-[99px] h-[15px] text-[12px] text-[#a1a1aa]">
+              Ready to explore.
+            </div>
+          </div>
+          <div class="w-[1240px] h-[956px] gap-[28px] flex flex-col">
+            <div class="w-[1240px] h-[136px] gap-[12px]">
+              <div class="w-[1240px] h-[29px] text-[14px] text-[#e4e4e7]">
+                Red
+              </div>
+              <div class="w-[1240px] h-[107px] gap-[12px] flex">
+                <div class="w-[113.2px] h-[107px]">
+                  <div
+                    class="w-[113.2px] h-[64px] border border-[#fde3e3] rounded-[12px] bg-[#fde3e3]"
+                  ></div>
+                  <div
+                    class="w-[113.2px] h-[43px] pt-[8px] pb-[4px] gap-[4px] flex flex-col items-center justify-center"
+                  >
+                    <div class="w-[22px] h-[15px] text-[12px] text-[#d4d4d8]">
+                      100
+                    </div>
+                    <div class="w-[38px] h-[12px] text-[9px] text-[#a1a1aa]">
+                      #FDE3E3
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[113.2px] h-[107px]">
+                  <div
+                    class="w-[113.2px] h-[64px] border border-[#Fabdbd] rounded-[12px] bg-[#fabdbd]"
+                  ></div>
+                  <div
+                    class="w-[113.2px] h-[43px] pt-[8px] pb-[4px] gap-[4px] flex flex-col items-center justify-center"
+                  >
+                    <div class="w-[22px] h-[15px] text-[12px] text-[#d4d4d8]">
+                      200
+                    </div>
+                    <div class="w-[38px] h-[12px] text-[9px] text-[#a1a1aa]">
+                      #FABDBD
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[113.2px] h-[107px]">
+                  <div
+                    class="w-[113.2px] h-[64px] border border-[#f68e8e] rounded-[12px] bg-[#f68e8e]"
+                  ></div>
+                  <div
+                    class="w-[113.2px] h-[43px] pt-[8px] pb-[4px] gap-[4px] flex flex-col items-center justify-center"
+                  >
+                    <div class="w-[22px] h-[15px] text-[12px] text-[#d4d4d8]">
+                      300
+                    </div>
+                    <div class="w-[38px] h-[12px] text-[9px] text-[#a1a1aa]">
+                      #F68E8E
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[113.2px] h-[107px]">
+                  <div
+                    class="w-[113.2px] h-[64px] border border-[#F15555] rounded-[12px] bg-[#f15555]"
+                  ></div>
+                  <div
+                    class="w-[113.2px] h-[43px] pt-[8px] pb-[4px] gap-[4px] flex flex-col items-center justify-center"
+                  >
+                    <div class="w-[22px] h-[15px] text-[12px] text-[#d4d4d8]">
+                      400
+                    </div>
+                    <div class="w-[38px] h-[12px] text-[9px] text-[#a1a1aa]">
+                      #F15555
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[113.2px] h-[107px]">
+                  <div
+                    class="w-[113.2px] h-[64px] border border-[#ed1d1d] rounded-[12px] bg-[#ed1d1d]"
+                  ></div>
+                  <div
+                    class="w-[113.2px] h-[43px] pt-[8px] pb-[4px] gap-[4px] flex flex-col items-center justify-center"
+                  >
+                    <div class="w-[22px] h-[15px] text-[12px] text-[#d4d4d8]">
+                      500
+                    </div>
+                    <div class="w-[38px] h-[12px] text-[9px] text-[#a1a1aa]">
+                      #ED1D1D
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[113.2px] h-[107px]">
+                  <div
+                    class="w-[113.2px] h-[64px] border border-[#cb1010] rounded-[12px] bg-[#cb1010]"
+                  ></div>
+                  <div
+                    class="w-[113.2px] h-[43px] pt-[8px] pb-[4px] gap-[4px] flex flex-col items-center justify-center"
+                  >
+                    <div class="w-[22px] h-[15px] text-[12px] text-[#d4d4d8]">
+                      600
+                    </div>
+                    <div class="w-[38px] h-[12px] text-[9px] text-[#a1a1aa]">
+                      #CB1010
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[113.2px] h-[107px]">
+                  <div
+                    class="w-[113.2px] h-[64px] border border-[#a50d0d] rounded-[12px] bg-[#a50d0d]"
+                  ></div>
+                  <div
+                    class="w-[113.2px] h-[43px] pt-[8px] pb-[4px] gap-[4px] flex flex-col items-center justify-center"
+                  >
+                    <div class="w-[22px] h-[15px] text-[12px] text-[#d4d4d8]">
+                      700
+                    </div>
+                    <div class="w-[38px] h-[12px] text-[9px] text-[#a1a1aa]">
+                      #A50D0D
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[113.2px] h-[107px]">
+                  <div
+                    class="w-[113.2px] h-[64px] border border-[#7f0a0a] rounded-[12px] bg-[#7f0a0a]"
+                  ></div>
+                  <div
+                    class="w-[113.2px] h-[43px] pt-[8px] pb-[4px] gap-[4px] flex flex-col items-center justify-center"
+                  >
+                    <div class="w-[22px] h-[15px] text-[12px] text-[#d4d4d8]">
+                      800
+                    </div>
+                    <div class="w-[38px] h-[12px] text-[9px] text-[#a1a1aa]">
+                      #7F0A0A
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[113.2px] h-[107px]">
+                  <div
+                    class="w-[113.2px] h-[64px] border border-[#5e0808] rounded-[12px] bg-[#5e0808]"
+                  ></div>
+                  <div
+                    class="w-[113.2px] h-[43px] pt-[8px] pb-[4px] gap-[4px] flex flex-col items-center justify-center"
+                  >
+                    <div class="w-[22px] h-[15px] text-[12px] text-[#d4d4d8]">
+                      900
+                    </div>
+                    <div class="w-[38px] h-[12px] text-[9px] text-[#a1a1aa]">
+                      #5E0808
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[113.2px] h-[107px]">
+                  <div
+                    class="w-[113.2px] h-[64px] border border-[#390505] rounded-[12px] bg-[#390505]"
+                  ></div>
+                  <div
+                    class="w-[113.2px] h-[43px] pt-[8px] pb-[4px] gap-[4px] flex flex-col items-center justify-center"
+                  >
+                    <div class="w-[22px] h-[15px] text-[12px] text-[#d4d4d8]">
+                      950
+                    </div>
+                    <div class="w-[38px] h-[12px] text-[9px] text-[#a1a1aa]">
+                      #390505
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
